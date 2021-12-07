@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<!--双目相机至标定板坐标系变换矩阵-->
+<extrinsic  type_id="opencv-matrix">    
+   <rows>4</rows>
+   <cols>4</cols>
+   <dt>f</dt>
+   <data>
+        0.0169    -0.9998    -0.0105    0.0456334 
+        0.5225    -0.0001     0.8526    -0.1590711
+        -0.8525   -0.0199     0.5224     1.1491
+        0.0            0.0            0.0         1.0
+   </data>
+</extrinsic>
+
+<base_to_world  type_id="opencv-matrix">    <!--车体至标定板坐标系变换矩阵-->
+   <rows>4</rows>
+   <cols>4</cols>
+   <dt>f</dt>
+   <data>
+        -1.0    0.0    0.0    1.445   
+        0.0     1.0     0.0     -0.04
+        0.0     0.0     -1.0   0.0
+        0.0     0.0     0.0    1.0
+   </data>
+</base_to_world>
+
+<model >1</model>  <!--室内==1   室外==2 模式参数不同-->
+
+<voxel_grid>0.03   0.03   0.03</voxel_grid>    <!--  相机传感器 体素滤波器  size  -->
+<iterations_num>200</iterations_num>         <!--平面拟合算法迭代次数-->
+<distance_threshold>0.04</distance_threshold>  <!--点云平面拟合 距离阈值 单位 m-->
+<EpsAngle>5.0</EpsAngle>    
+<X_range>-0.05  2.0</X_range>   <!--点云直通滤波x方向下限和上限值-->
+<Y_range>-0.7 0.7</Y_range>
+<Z_range>0.05  2.0</Z_range>
+
+<voxel_grid_outdoor>0.03   0.03   0.03</voxel_grid_outdoor>    <!--  相机传感器 体素滤波器  size  -->
+<iterations_num_outdoor>200</iterations_num_outdoor>         <!--平面拟合算法迭代次数-->
+<distance_threshold_outdoor>0.06</distance_threshold_outdoor>  <!--点云平面拟合 距离阈值 单位 m-->
+<EpsAngle_outdoor>10.0</EpsAngle_outdoor>    
+<X_range_outdoor>-0.05  2.0</X_range_outdoor>   <!--点云直通滤波x方向下限和上限值-->
+<Y_range_outdoor>-0.7 0.7</Y_range_outdoor>
+<Z_range_outdoor>0.05  2.0</Z_range_outdoor>
+
+
+<RadiusOutlierRemoval_Enable>true</RadiusOutlierRemoval_Enable>
+<RadiusSearch>0.05</RadiusSearch>   <!-- 滤波半径-->
+<MinNeighbors>5</MinNeighbors>    <!--最小邻域数目-->
+
+</opencv_storage>

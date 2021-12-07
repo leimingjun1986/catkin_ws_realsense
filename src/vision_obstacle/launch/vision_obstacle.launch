@@ -1,0 +1,11 @@
+<launch>
+    
+    <node name="vision_obstacle" pkg="vision_obstacle" type="vision_obstacle_node" output="screen" respawn="true">
+        
+    </node>
+
+    <!-- 以下为在 变换后点云坐标系  和  realsense相机  坐标系 关系变换   args：x y z yaw pitch roll  单位为米  弧度-->
+    
+    <node pkg="tf" type="static_transform_publisher" name="base_to_realsense_broadcaster" args="0.0  0.0  0.0  0.0  0.0  0.0 /pcloud_transform_base /camera/depth/color/points 100"/> 
+    
+</launch>

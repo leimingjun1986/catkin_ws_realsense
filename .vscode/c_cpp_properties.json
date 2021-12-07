@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/flfjepl/catkin_ws_realsense/devel/include/**",
+        "/home/flfjepl/control_holder/devel/include/**",
+        "/home/flfjepl/catkin_ws_learn/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/flfjepl/catkin_ws_realsense/src/coordinate_calib/include/**",
+        "/home/flfjepl/control_holder/src/holder/include/**",
+        "/home/flfjepl/catkin_ws_learn/src/multi_thread_demo/include/**",
+        "/home/flfjepl/catkin_ws_realsense/src/realsense-ros/realsense2_camera/include/**",
+        "/home/flfjepl/catkin_ws_learn/src/test_topic/include/**",
+        "/home/flfjepl/catkin_ws_realsense/src/vision_obstacle/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

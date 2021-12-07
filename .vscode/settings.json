@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/flfjepl/catkin_ws_realsense/devel/lib/python2.7/dist-packages",
+        "/home/flfjepl/control_holder/devel/lib/python2.7/dist-packages",
+        "/home/flfjepl/catkin_ws_learn/devel/lib/python2.7/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/flfjepl/catkin_ws_realsense/devel/lib/python2.7/dist-packages",
+        "/home/flfjepl/control_holder/devel/lib/python2.7/dist-packages",
+        "/home/flfjepl/catkin_ws_learn/devel/lib/python2.7/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ]
+}
